@@ -4,11 +4,10 @@
   "description": "",
   "main": "dist/webpack-library-starter-kit.js,",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
     "format": "prettier-standard 'src/**/*.js'",
     "precommit": "lint-staged",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "webpack-dev-server --mode development --open --hot"
   },
   "repository": {
     "type": "git",
