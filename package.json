@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier-standard 'src/**/*.js'",
     "precommit": "lint-staged",
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -22,9 +22,15 @@
   },
   "homepage": "https://github.com/maecapozzi/webpack-library-starter-kit#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.0",
-    "prettier-standard": "^8.0.1"
+    "prettier-standard": "^8.0.1",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
     "react-dom": "^16.4.1",
