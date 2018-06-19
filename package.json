@@ -1,0 +1,38 @@
+{
+  "name": "webpack-library-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/webpack-library-starter-kit.js,",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier-standard 'src/**/*.js'",
+    "precommit": "lint-staged"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maecapozzi/webpack-library-starter-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maecapozzi/webpack-library-starter-kit/issues"
+  },
+  "homepage": "https://github.com/maecapozzi/webpack-library-starter-kit#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "prettier-standard": "^8.0.1",
+    "webpack": "^4.12.0"
+  },
+  "dependencies": {
+    "react-dom": "^16.4.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ]
+  }
+}
